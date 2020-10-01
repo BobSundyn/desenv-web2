@@ -33,3 +33,29 @@ function toUpper() {
     // Padrão de nomenclatura: camelCase
     // Que são as corcoas dos camelos
 }
+
+// Calcular a Média das Notas
+function calcularMedia() {
+    // 1. Declaração das variáveis e atribuição de valores
+    var nota1 = document.getElementById('nota1').value;
+    // var nota1 = parseFloat(document.getElementById('nota1').value);
+    var nota2 = document.getElementById('nota2').value;
+    var nota3 = document.getElementById('nota3').value;
+    var media;
+
+    // 2. Cálculos e Verificações
+    nota1 = parseFloat(nota1);
+    nota2 = parseFloat(nota2);
+    nota3 = parseFloat(nota3);
+
+    media = (nota1 + nota2 + nota3) / 3;
+
+    console.log(media);
+
+    /* Precedência
+    ( )  o que estiver dentro dos parênteses
+    * / %   multiplicação, divisão e mod (divisão com resto)
+    + - adição e subtração */
+
+    document.getElementById('resultado').innerHTML = "Resultado: " + media;
+}
