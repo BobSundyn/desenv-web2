@@ -41,14 +41,17 @@ function calcularMedia() {
     // var nota1 = parseFloat(document.getElementById('nota1').value);
     var nota2 = document.getElementById('nota2').value;
     var nota3 = document.getElementById('nota3').value;
+    var extra = document.getElementById('extra').value;
     var media;
+    
 
     // 2. Cálculos e Verificações
     nota1 = parseFloat(nota1);
     nota2 = parseFloat(nota2);
     nota3 = parseFloat(nota3);
+    media = parseFloat(media);
 
-    media = (nota1 + nota2 + nota3) / 3;
+    media = (nota1 + nota2 + nota3) / 3 + extra;
 
     console.log(media);
 
